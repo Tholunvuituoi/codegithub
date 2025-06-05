@@ -1,0 +1,203 @@
+p{
+    background-color: palevioletred; 
+    color:greenyellow;
+    font-family: sans-serif,lucida,arial,helvetica;
+    font-size:16px;
+    font-style: italic;
+}
+.le{
+    background-color: aquamarine;
+    color:antiquewhite;
+}
+.chan{
+    background-color:red ;
+    color:brown;
+}
+#pa1{
+    background-color: blueviolet;
+    color:bisque;
+}
+/*
+    Nếu trong code html của bạn là <p> thì code trong css sẽ là
+    p{
+
+    }   
+    Nếu trong code html của bạn là <p class="value"> thì code trong css sẽ là:
+    .value{
+    
+    }
+    Nếu trong code html của bạn là <p id="value" thì code trong Css sẽ là :
+    #value{
+    
+    }
+    +) Về các thuộc tính:
+    -)Cơ bản về font chữ trong css
+    font-family: Phông này sẽ cho chọn các phông chữ mà nó xuất hiện kiểu khác trên trình duyệt
+    của bạn(sans-serif thường là phông chữ đẹp nhất và được sử dụng nhiều) 
+    VD1:font-family: sans-serif,lucida,arial,helvetica ;
+    Trong trường hợp vd1 nếu máy của bạn không hỗ trợ phông chữ đầu tiên hoặc bạn nhập sai phông
+    chữ đầu tiên thì nó sẽ chuyển sang phông chữ thứ 2(tương tự sẽ theo thứ tự)
+    font-size: Thay đỗi kích cỡ của bộ chọn
+    font-style: Được sử dụng để làm kiểu của bộ chọn
+    font-weight: Được sử dụng để tăng độ đậm của chữ cái hoặc bộ chọn
+    text-decoration:underline; cái này có thể gạch chân các bộ chọn
+    -)Định dạng về lề của một cái element;
+    border-style:; để mặc định sẽ không có cái gì
+    Còn nếu là border-style:solid; (sẽ tạo ra một cái khung bao quanh bộ chọn và còn nhiều kiểu
+    khác)
+    border-width: Sẽ giúp chúng ta điều chỉnh độ rộng của lề(bình thường để 2px)
+    border-color: Dùng để đổi màu của lề
+    border-radius: Dùng để góc của lề được căn chỉnh
+    padding: Là khoảng cách từ chữ ở trong lề đến cái lề( thường để 10-20px)
+    border-top: Là phía trên của lề
+      border-top-color:chỉnh màu phía trên của lề
+      border-right: Là lề bên phải
+      border-rtight-width: Chỉnh độ rộng của lề bên phải 
+      background: linear-gradient(skybulue,lightgreen): Có thể cho và kết hợp nhiều màu sắc với nhau
+      background-repeat:no-repeat; Có thể ngăn không cho màu đang sử dụng của bộ chọn này sang bộ 
+      chọn khác
+      background-attachment:fixed; Làm cho cả trang wed đều có màu kết hợp
+      (3 bộ background này thường kết hợp với nhau)
+      background: linear-gradient(to right skybulue,lightgreen) (Sẽ cho từ màu bên trái sang bên 
+      phải)
+*/      
+        body{
+            background-image: 
+            url("https://media.vov.vn/sites/default/files/styles/large/public/2023-12/2_qua_chuoi.jpg");
+             background-repeat:no-repeat;
+             background-attachment:fixed;
+             
+        }
+        #buoc1{
+            background-color: blue;
+            border-style:solid;
+            margin-top:10px;/* Khoảng cách từ viền wed đến lề*/
+            padding:10px; /* khoảng cách từ lề đến chữ bên trong lề*/
+            width:300px;
+            height:300px;
+            position: relative;
+            position: fixed;
+            top:10px;
+        }
+        #buoc2{
+            background-color: red;
+            border-style:solid;
+            margin-top:10px;/* Khoảng cách từ viền wed đến lề*/
+            padding:10px; /* khoảng cách từ lề đến chữ bên trong lề*/
+            position: absolute;
+             width:100px;
+            height:100px;
+            top:30px;
+            left:30px;
+        }
+        h1{
+            text-shadow: 1px 1px 1px grey;
+        }
+        /*
+        background-image: dùng để chèn hình ảnh
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        (2 backgroun dưới dùng để làm cho hình ảnh không bị trùng lặp)
+        background-position:center; Làm cho hình ảnh luôn luôn đứng ở giữa
+        background-size:cover; làm cho hình ảnh thể hiện độ rộng của toàn màn hình  
+        - Các phần tử khoảng cách 
+        Margin là không gian bao quanh element
+        padding là khoảng cách từ border đến nội dung
+        -Thuộc tính position( trong thuộc tính posision có 5 giá trị cần quan tâm)
+        1)position:static; là cái mặc định ban đầu
+        2)position:relative; là chỉ cái dòng chữ ban đầu ở bên trong bộ (nó thường đi với:
+        top:
+        left:
+        right:
+        3)position: absolute; Là để chỉ vị trí phần tử đầu so với phần tử cha của nó gần nhất có
+        cái position:relative
+        Vd: nếu trong code mà div nằm trong body thì phần tử div sẽ căn theo body nếu để top:0px
+        Như đoạn code trên div2 sẽ nằm trong div 1
+        4) position:fixed; có ngĩa là nó sẽ làm cho bộ chọn hoặc phần tử được sử dụng 
+        không di chuyển dù có lướt lên lướt xuống trang web
+        5) position: sticky; nó như là sự kết hợp giữa relative và cái fixed
+        - Thuộc tính shadow:
+        text-shadow: 1px 1px 1px grey; 
+        1px đầu tiên để 1px thì đổ bống về bên phải -1px đổ bống về bên trái
+        1px  ở giữa sẽ đổ bóng ở bên dưới còn -1px sẽ đổ bóng ở bên trên
+        1px ở cuối là chỉ độ mờ
+        text-shadow: 1px 1px 1px, -1px -1px 1px red; lúc này dòng chữ có thể kết hợp cả 2 màu
+        box-shadow: là không gian của cả cái element sử dụng
+        box-shadow:5px 5px 2px yellow;
+        -Thuộc tính transform: là chuyển đổi, thay đổi vị trí hình dáng và xoay
+        transform:translate():dịch sang đâu đó
+        vd: transform:translateX(40px): là dịch sang ngang
+        transform:translateY(40px); là dịch hàng thẳng
+        Chú ý: khi sử dụng riêng thì nó chỉ thực hiện 1 cái nhập sau vì thế chúng ta có sự kết
+        hợp:
+        transform:translateX(40px,40px);
+        transform:rotateX(180deg): Quay ngược 180 độ
+        transform:rotateY(180deg): Quay ngược 180 độ
+        transform: scaleX(3); phóng to X(ngang)lên 3 lần 
+        transform: scaleY(3); phóng to X(dọc)lên 3 lần
+        transform: skewX(45deg); :Ngiêng X đi 45 độ  
+        transform: skewY(45deg); :Ngiêng Y đi 45 độ
+        transform: skew(20deg,20deg): Ngiêng cã X và Y 20 độ
+        transform: matrix(2,0,0,2,250,250);  đây là transform tổng có 6 giá trị:
+        matrix gồm:
+        scaleX()
+        skewY()
+        skewX()
+        scaleY()
+        translateX()
+        translatey()
+        */
+        button:hover{
+            background-color: red;
+        }
+        button:active{
+            background-color: greenyellow;
+        }
+        li:nth-child(5){
+            color:red;
+        }
+        /* 
+        button:hover{
+            background-color: red;
+        }
+        Ở đoạn code trên khi mà ta đưa chọn qua nó sẽ chuyển sang màu đỏ 
+         button:active{
+            background-color: greenyellow;
+        }
+            Khi nhấn vào thì màu của nó sẽ chuyển sang màu xanh(đây gọi là lớp giả) 
+        li:nth-child(5){
+            color:red;
+        } 
+            -Cái li thứ  5 sẽ chuyển sang màu đỏ
+        li:nth-child(odd){
+            color:red;
+        }
+            -Các li đưng ở vị trí lẻ sẽ thành màu đỏ
+        li:nth-child(even){
+            color:red;
+        }
+            Các li đứng ở vị trí chẵn sẽ thành màu đỏ
+        li:nth-child(3n){
+            color:red;
+        }
+            Ở li này n sẽ là từ 0 cho đến 9
+        */
+        @media all and (max-width:700px){
+            h1{
+                color:red;
+            }
+        }
+        /*
+        Tiếp theo là về responsive, đây là một thuật ngữ để chỉ 1 cái trang web nó có thể hiển thị
+        tốt trên các thiết bị khác nhau bao gồm ở trên máy tính, máy tính bảng và trên điện thoại
+        thông minh(nó giúp trang web không bị vỡ dao diện mà dao diện đấy sẽ tự phù hợp điều chỉnh
+        sao cho phù hợp với các thiết bị khác nhau
+        +) reponsive về độ rộng màn hình
+        Để muốn chữ của wed vừa với độ rộng màn hình ta sử dụng:
+         @media all and (max-width:700px){
+            h1{
+                color:red;
+            }
+        } tức là đối với tất cả màn hình nó có độ rộng tối đa là bao nhiêu thì nó sẽ thực thi các
+         css ỏ trong @media(đây là 1 cách reponsive của CSS)
+        */
