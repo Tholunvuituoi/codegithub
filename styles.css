@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafd;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav a {
+    margin: 0 14px;
+    text-decoration:none;
+    color: #3c3c3c;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    color: #1cb0f6;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 18px;
+    font-size: 1rem;
+}
+
+.signup-btn {
+    background: #58cc02;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.signup-btn:hover {
+    background: #46a302;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+    background: #f7fafd;
+}
+
+.hero-content {
+    max-width: 480px;
+    margin-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.6rem;
+    color: #222;
+    margin-bottom: 18px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.signup-btn.big {
+    font-size: 1.2rem;
+    padding: 12px 36px;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 320px;
+}

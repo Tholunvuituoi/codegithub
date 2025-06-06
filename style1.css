@@ -1,0 +1,165 @@
+body{
+    text-align:sans-serif, Arial ;
+    font-family: sans-serif,Arial;
+    margin:0;
+    
+    background: linear-gradient(pink,aquamarine);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header{
+display:flex;
+align-items: center;
+justify-items: space-between;
+
+padding:18px 40px;
+box-shadow: 0 2px 8px grey (0,0,0,0.03);
+}
+.logo img{
+    height:60px;
+}
+.nav a{
+    margin: 0 14px;
+    text-decoration: none;
+    font-weight:500;
+    font-size:1rem;
+    color:black
+}
+.nut{
+    display:flex;
+    align-items: center;
+}
+.login-btn{
+  
+    color:black;
+    
+    text-decoration:none;
+    font-weight:600;
+    margin-right:18px;
+    font-size:1rem;
+    
+}
+.signup-btn{
+    background:chartreuse;
+    color:aliceblue;
+    text-decoration: none;
+    padding: 8px 22px;
+    font-weight:600;
+    font-size:1rem;
+    
+    transition:background 0.2s ;
+    border-radius:22px;
+}
+.signup-btn:hover{
+    background:greenyellow ;
+}
+.signup-btn.big{
+    font-size:1.2rem;
+    padding : 12px 36px;
+}
+.khainiem{
+     background: linear-gradient(pink,aquamarine);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:20px;
+}
+h1{
+    text-align:center;
+    color:blueviolet;
+}
+.ngatquang{
+    text-align:center;
+    color:blueviolet;
+}
+.flashcard{
+    text-align:center;
+    color:blueviolet;
+}
+.gioithieu{
+    text-align:center;
+    color:blueviolet;
+}
+.phobien{
+    text-align: center;
+    color:blueviolet;
+}
+.hero{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding:20px;
+}
+.chude{
+    width:100px;
+    height:100px;
+    background-color:aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px grey(0,0,0,0.2);
+    text-align:center;
+    color:blue;
+}
+.chude img{
+    width:100px;
+    height:100px;
+    margin-bottom: 10px;
+}
+.trang1{
+    margin-top: 40px;/*đẩy xuống dưới*/
+    padding:20px;
+     background: linear-gradient(pink,aquamarine);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 4px 8px gray(0,0,0,0.2);
+   
+    margin-right: auto;
+    margin-left: auto;
+
+}
+h2{
+    padding-top:20px;
+    margin-top:20px;
+    color:blueviolet;
+}
+.tuvung{
+    background: linear-gradient(skyblue,lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border:1px snow;
+    border-radius: 10px;
+    padding:16px;
+    margin:12px auto;
+    width:300px;
+}
+.word{
+    font-size:22px;
+    font-weight: bold;
+    color:crimson;
+}
+.meaning{
+   margin:6px 0;
+   font-size: 18px;
+   color:black;
+}
+.example{
+    font-size:14px;
+    font-style:italic;
+    color:blue;
+    margin-bottom:10px;
+}
+.button-gr button{
+    margin:4px;
+    padding:8px 12px;
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size:16px;
+}
+.btn-remember{
+    color:white;
+    background-color:lawngreen;
+}
+.btn-review{
+    color:white;
+    background-color: coral;
+}
