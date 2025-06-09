@@ -2,6 +2,7 @@ body{
     text-align:sans-serif, Arial ;
     font-family: sans-serif,Arial;
     margin:0;
+    flex-wrap: wrap;
     
     background: linear-gradient(pink,aquamarine);
     background-repeat: no-repeat;
@@ -18,13 +19,18 @@ box-shadow: 0 2px 8px grey (0,0,0,0.03);
 .logo img{
     height:60px;
 }
-.nav a{
+.text{
     margin: 0 14px;
     text-decoration: none;
     font-weight:500;
     font-size:1rem;
     color:black
+    
 }
+.text:target{
+    color:aqua;
+}
+
 .nut{
     display:flex;
     align-items: center;
@@ -35,9 +41,15 @@ box-shadow: 0 2px 8px grey (0,0,0,0.03);
     
     text-decoration:none;
     font-weight:600;
-    margin-right:18px;
+    margin: 0 14px;
     font-size:1rem;
     
+}
+.login-btn:hover{
+    background-color: lightskyblue;
+}
+.login-btn:active{
+    background-color:aqua;
 }
 .signup-btn{
     background:chartreuse;
@@ -51,7 +63,10 @@ box-shadow: 0 2px 8px grey (0,0,0,0.03);
     border-radius:22px;
 }
 .signup-btn:hover{
-    background:greenyellow ;
+    background-color:greenyellow ;
+}
+.sigup-btn:active{
+    background-color:blue;
 }
 .signup-btn.big{
     font-size:1.2rem;
@@ -62,8 +77,10 @@ box-shadow: 0 2px 8px grey (0,0,0,0.03);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding:20px;
+    font-size:20px;
 }
 h1{
+    font-size:40px;
     text-align:center;
     color:blueviolet;
 }
@@ -98,6 +115,7 @@ h1{
     box-shadow: 0 4px 8px grey(0,0,0,0.2);
     text-align:center;
     color:blue;
+    font-size:16px;
 }
 .chude img{
     width:100px;
@@ -120,46 +138,96 @@ h2{
     padding-top:20px;
     margin-top:20px;
     color:blueviolet;
+    text-align: center;
+    font-size:34px;
+}
+.card{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+     perspective: 1000px;
+            display: flex;
+            margin: 20px;
+             
 }
 .tuvung{
-    background: linear-gradient(skyblue,lightgreen);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border:1px snow;
-    border-radius: 10px;
-    padding:16px;
-    margin:12px auto;
-    width:300px;
+    
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
+.tuvung:hover{
+    transform: rotateY(180deg);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word, .meaning {
+    
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 .word{
-    font-size:22px;
-    font-weight: bold;
-    color:crimson;
+    background: linear-gradient(to bottom,aqua, #56ab2f);
 }
 .meaning{
-   margin:6px 0;
-   font-size: 18px;
-   color:black;
+   background: linear-gradient(to bottom, aqua, #a8e063);
+            transform: rotateY(180deg);
 }
-.example{
-    font-size:14px;
-    font-style:italic;
-    color:blue;
-    margin-bottom:10px;
+h3{
+    font-size:16px;
+    
+}
+.button-gr{
+    margin-top: 15px;
 }
 .button-gr button{
-    margin:4px;
+    margin:5px;
     padding:8px 12px;
     border:none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor:pointer;
     font-size:16px;
 }
 .btn-remember{
     color:white;
-    background-color:lawngreen;
+    background-color:chartreuse;
+}
+.btn-remember:hover{
+    
+    background-color:yellowgreen;
+}
+.btn-remember:active{
+    
+    background-color:lightpink;
 }
 .btn-review{
     color:white;
     background-color: coral;
+}
+.btn-review:hover{
+    
+    background-color:lightsalmon;
+}
+.btn-review:active{
+    
+    background-color:darkblue;
 }
