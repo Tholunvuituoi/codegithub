@@ -160,7 +160,7 @@ h2{
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
-.tuvung:hover{
+.tuvung:active{
     transform: rotateY(180deg);
      display: flex;
     flex-direction: column;
